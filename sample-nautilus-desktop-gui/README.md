@@ -1,5 +1,9 @@
 # Nautilus GUI Setup
 
+## TLDR
+
+Copy this folder, then inside each file, change instrances of "j" with your initial, and then create the storage, then cache, then desktop, then desktop-ingress. Finally, go to the url mentioned in the desktop-ingre
+
 ## Basics/Resources
 
 WARNING: Before beginning this guide, please have a basic understanding of nautilus and have it setup on your computer. A quick start can be found here: https://docs.nationalresearchplatform.org/userdocs/start/quickstart/. To get namespace access, please email lgilpin@ucsc.edu.
@@ -163,5 +167,3 @@ kubectl delete deployment yourname/initial-desktop
 You may delete storage using an identical process, however if work is saved on them it is not recommended.
 
 To add carla to the desktop, use the added guide at the top of the page.
-
-
