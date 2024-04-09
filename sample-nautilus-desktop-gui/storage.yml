@@ -3,9 +3,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: j-carla
 spec:
-  storageClassName: seaweedfs-storage-nvme
+  storageClassName: rook-ceph-block
   accessModes:
-  - ReadWriteMany
+  - ReadWriteOnce
   resources:
     requests:
       storage: 256Gi

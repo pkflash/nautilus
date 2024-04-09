@@ -2,7 +2,7 @@
 
 ## TLDR
 
-Copy this folder, then inside each file, change instrances of "j" with your initial, and then create the storage, then cache, then desktop, then desktop-ingress. Finally, go to the url mentioned in the desktop-ingre
+Copy this folder, then inside each file, change instrances of "j" with your initial, and then create the storage, then cache, then desktop, then desktop-ingress. Finally, go to the url mentioned in the desktop-ingres. When you go to the url, it will ask for username and password. Username is user, password is mypass.
 
 ## Basics/Resources
 
