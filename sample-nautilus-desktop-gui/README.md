@@ -166,4 +166,6 @@ kubectl delete deployment yourname/initial-desktop
 ```
 You may delete storage using an identical process, however if work is saved on them it is not recommended.
 
+To preserve any files on your Nautilus GUI Desktop, make sure to save them in the persistent folder in the home directory or else they will be cleared.To preserve any files on Nautilus GUI, make sure to save them in the persistent folder in the home directory or else they will be cleared on pod deletion.
+
 To add carla to the desktop, use the added guide at the top of the page.
