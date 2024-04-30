@@ -2,7 +2,13 @@
 
 ## TLDR
 
-Copy this folder, then inside each file, change instrances of "j" with your initial, and then create the storage, then cache, then desktop, then desktop-ingress. Finally, go to the url mentioned in the desktop-ingres. When you go to the url, it will ask for username and password. Username is user, password is mypass.
+Create a copy of this folder, then inside each file, change every instance of "INITIALS" with your initial, and then run the command below to start your instance.
+
+```bash
+sh setup.sh 0
+```
+
+to start your desktop. Finally, go to the url mentioned in the desktop-ingres file, which would look like this `INITIALS.nrp-nautilus.io`. When you go to the url, it will ask for username and password. For the `aiea-slugbotics` namespace, the username is `user`, password is `mypass`. For the `gilpin-lab` namespace, the username is `user`, and password is `Aiea123` (I think), you can know for sure by checking the secrets for `my-pass`.
 
 ## Basics/Resources
 
