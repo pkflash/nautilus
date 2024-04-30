@@ -8,7 +8,13 @@ Create a copy of this folder, then inside each file, change every instance of "I
 sh setup.sh 0
 ```
 
-to start your desktop. Finally, go to the url mentioned in the desktop-ingres file, which would look like this `INITIALS.nrp-nautilus.io`. When you go to the url, it will ask for username and password. For the `aiea-slugbotics` namespace, the username is `user`, password is `mypass`. For the `gilpin-lab` namespace, the username is `user`, and password is `Aiea123` (I think), you can know for sure by checking the secrets for `my-pass`.
+to start your desktop. Finally, go to the url mentioned in the desktop-ingres file, which would look like this `INITIALS.nrp-nautilus.io`. When you go to the url, it will ask for username and password. For the `aiea-slugbotics` namespace, the username is `user`, password is `mypass`. For the `gilpin-lab` namespace, the username is `user`, and password is `Aiea123` (I think), you can know for sure by checking the secrets for `my-pass`. 
+
+Once you are done using the GUI, run the following command to kill your deployment, if you don't the nautilus admins will find you, and they will ban you. (Jk, but not really...)
+
+```bash
+sh setup.sh 1
+```
 
 ## Basics/Resources
 
