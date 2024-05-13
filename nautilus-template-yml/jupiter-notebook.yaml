@@ -23,5 +23,9 @@ spec:
   volumes:
   - name: pvc
     persistentVolumeClaim:
-      claimName: jonathan-nuscenes
+      claimName: waymo-perception
 
+# Instructions
+# 1. Clone the repo
+# 2. Change the name of the pod and the PVC claim name
+# 3. Create the pod 
