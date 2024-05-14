@@ -6,7 +6,7 @@ spec:
   containers:
   - name: gpu-container
     image: gitlab-registry.nrp-nautilus.io/prp/jupyter-stack/tensorflow
-    command: ["sh", "-c", "jupyter notebook --ip='0.0.0.0' && sleep infinity"]
+    command: ["sh", "-c", "sudo apt-get update && pip3 install torch torchvision torchaudio && jupyter notebook --ip='0.0.0.0' && sleep infinity"]
     resources:
       limits:
         memory: 20Gi
@@ -29,3 +29,6 @@ spec:
 # 1. Clone the repo
 # 2. Change the name of the pod and the PVC claim name
 # 3. Create the pod 
+# 4. Port forward the pod to your local machine, 8888:8888
+# 5. Open your browser and go to localhost:8888
+# 6. Enter the token from the pod logs
