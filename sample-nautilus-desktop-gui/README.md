@@ -16,6 +16,10 @@ Once you are done using the GUI, run the following command to kill your deployme
 sh setup.sh 1
 ```
 
+## Setting Up CARLA
+
+You can instal all the dependencies by running `carla_setup.sh` on the pod.
+
 ## Basics/Resources
 
 WARNING: Before beginning this guide, please have a basic understanding of nautilus and have it setup on your computer. A quick start can be found here: https://docs.nationalresearchplatform.org/userdocs/start/quickstart/. To get namespace access, please email lgilpin@ucsc.edu.
