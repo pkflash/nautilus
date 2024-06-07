@@ -4,7 +4,7 @@ metadata:
   name: jonathan-jupyter-notebook
 spec:
   containers:
-  - name: gpu-container
+  - name: jonathan-jupyter-notebook
     image: gitlab-registry.nrp-nautilus.io/prp/jupyter-stack/tensorflow
     command: ["sh", "-c", "sudo apt-get update && pip3 install torch torchvision torchaudio && jupyter notebook --ip='0.0.0.0' && sleep infinity"]
     resources:
