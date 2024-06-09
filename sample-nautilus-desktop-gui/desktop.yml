@@ -15,7 +15,7 @@ spec:
       hostname: egl
       containers:
       - name: egl
-        image: ghcr.io/selkies-project/nvidia-egl-desktop:latest
+        image: ghcr.io/selkies-project/nvidia-egl-desktop:18.04-legacy
         env:
         - name: TZ
           value: "UTC"
