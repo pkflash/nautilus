@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-    kubernetes.io/ingress.class: haproxy
+    spec.ingressClassName: haproxy
   name: INITIALS-desktop # Change this to your initials
 spec:
   rules:
