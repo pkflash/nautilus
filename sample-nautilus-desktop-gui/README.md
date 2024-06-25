@@ -90,6 +90,8 @@ mountPath: Add /persistent to home/user to make home/user/persistent
 ```
 CPU refers to the amount of cores requested.
 
+Also, in the image section, replace ":latest" with ":22.04-20240425164112" to avoid compatibility issues.
+
 For storage locate the volume subsection and change the code block as specified (with the chosen storage names):
 ```
 name: dshm
