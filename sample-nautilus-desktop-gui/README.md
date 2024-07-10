@@ -12,9 +12,7 @@ to start your desktop. Finally, go to the url mentioned in the desktop-ingres fi
 
 When you go to the url, it will ask for username and password. 
 
-For the `aiea-slugbotics` namespace, the username is `user`, password is `mypass`. 
-
-For the `gilpin-lab` namespace, the username is `user`, and password is `aiea123`.
+The username is `user`, and password is `aiea123`.
 
 <br>
 
