@@ -1,3 +1,5 @@
+# Run script with source carla_setup.sh
+
 #!/bin/bash
 BASE_PATH=~/persistent
 
