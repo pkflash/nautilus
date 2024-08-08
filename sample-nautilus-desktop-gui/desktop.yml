@@ -40,15 +40,8 @@ spec:
           value: "false"
         - name: ENABLE_BASIC_AUTH
           value: "true"
-        - name: TURN_HOST
-          value: "turn.nrp-nautilus.io"
-        - name: TURN_PORT
-          value: "3478"
-        - name: TURN_SHARED_SECRET
-          valueFrom:
-            secretKeyRef:
-              name: my-pass
-              key: turn-secret
+        - name: SELKIES_TURN_REST_URI
+          value: "http://turn-rest.nrp-nautilus.io"
         - name: TURN_PROTOCOL
           value: "tcp"
         - name: TURN_TLS
