@@ -1,3 +1,11 @@
+# Instructions
+# 1. Clone the repo
+# 2. Change the name of the pod and the PVC claim name
+# 3. Create the pod 
+# 4. Port forward the pod to your local machine, 8888:8888
+# 5. Open your browser and go to localhost:8888
+# 6. Enter the token from the pod logs
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -16,19 +24,14 @@ spec:
         memory: 2Gi
         cpu: "2"
         nvidia.com/gpu: 1
-    volumeMounts:
-    - mountPath: /pvcvolume
-      name: pvc
-  restartPolicy: Never
-  volumes:
-  - name: pvc
-    persistentVolumeClaim:
-      claimName: j-carla
 
-# Instructions
-# 1. Clone the repo
-# 2. Change the name of the pod and the PVC claim name
-# 3. Create the pod 
-# 4. Port forward the pod to your local machine, 8888:8888
-# 5. Open your browser and go to localhost:8888
-# 6. Enter the token from the pod logs
+        # Uncomment Section to mount a PVC
+
+        #   volumeMounts:
+        #   - mountPath: /pvcvolume
+        #     name: pvc
+        # restartPolicy: Never
+        # volumes:
+        # - name: pvc
+        #   persistentVolumeClaim:
+        #     claimName: j-carla
