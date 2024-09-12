@@ -92,3 +92,12 @@ spec:
       - name: root-vol
         persistentVolumeClaim:
           claimName: INITIALS-carla # Change this to your initials
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: topology.kubernetes.io/zone
+                operator: NotIn
+                values:
+                - ucsd-suncave
