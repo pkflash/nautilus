@@ -25,10 +25,10 @@ kind: Service
 metadata:
   name: INITIALS-desktop # Change this to your initials
   labels:
-    app: egl
+    app: INITIALS-desktop # Change this to your initials
 spec:
   selector:
-    app: INITIALS # Change this to your initials
+    app: INITIALS-desktop # Change this to your initials
   ports:
   - name: http
     protocol: TCP
