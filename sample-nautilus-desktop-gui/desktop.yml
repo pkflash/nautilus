@@ -15,7 +15,7 @@ spec:
       hostname: INITIALS-desktop # Change this to your initials
       containers:
       - name: INITIALS-desktop # Change this to your initials
-        image: ghcr.io/selkies-project/nvidia-glx-desktop:22.04-20240815104538
+        image: ghcr.io/selkies-project/nvidia-glx-desktop:latest
         env:
         - name: TZ
           value: "UTC"
@@ -75,7 +75,7 @@ spec:
           name: dshm
         - mountPath: /cache
           name: cache-vol
-        - mountPath: /home/user/persistent
+        - mountPath: /home/ubuntu/persistent
           name: root-vol
       dnsPolicy: None
       dnsConfig:

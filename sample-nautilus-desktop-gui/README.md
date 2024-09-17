@@ -12,7 +12,7 @@ to start your desktop. Finally, go to the url mentioned in the desktop-ingres fi
 
 When you go to the url, it will ask for username and password. 
 
-The username is `user`, and password is `aiea123`.
+The username is `ubuntu`, and password is `aiea123`.
 
 <br>
 
@@ -20,6 +20,15 @@ Once you are done using the GUI, run the following command to kill your deployme
 
 ```bash
 sh setup.sh 1
+```
+
+<br>
+
+If you run into any issues, run:
+
+```bash
+sh setup.sh 2
+sh setup.sh 0
 ```
 
 ## Setting Up CARLA
