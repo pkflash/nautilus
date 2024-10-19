@@ -1,7 +1,10 @@
 # Run script with source carla_setup.sh
 
 #!/bin/bash
-BASE_PATH=~/persistent
+BASE_PATH=/home/ubuntu/persistent
+
+#change perms on persistant folder
+sudo chmod -R 777 $BASE_PATH
 
 # Install Miniconda
 mkdir -p $BASE_PATH/miniconda3
