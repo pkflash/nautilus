@@ -36,16 +36,16 @@ spec:
       # - name: examplevol
       #   persistentVolumeClaim:
       #     claimName: jonathan-snn
-      affinity:
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-            - matchExpressions:
-              - key: nvidia.com/gpu.product
-                operator: In
-                values:
-                - NVIDIA-A100-80GB-PCIe
-      tolerations:
-      - effect: NoSchedule
-        key: nautilus.io/gilpin-lab
-        operator: Exists
+      # affinity:
+      #   nodeAffinity:
+      #     requiredDuringSchedulingIgnoredDuringExecution:
+      #       nodeSelectorTerms:
+      #       - matchExpressions:
+      #         - key: nvidia.com/gpu.product
+      #           operator: In
+      #           values:
+      #           - NVIDIA-A100-80GB-PCIe
+      # tolerations:
+      # - effect: NoSchedule
+      #   key: nautilus.io/gilpin-lab
+      #   operator: Exists
