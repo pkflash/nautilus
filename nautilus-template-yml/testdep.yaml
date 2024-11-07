@@ -1,41 +1,41 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: j-desktop-2
+  name: jonathan-snn
   labels:
-    k8s-app: j-desktop-2-2
+    k8s-app: jonathan-snn
 spec:
   replicas: 1
   selector:
     matchLabels:
-      k8s-app: j-desktop-2
+      k8s-app: jonathan-snn
   template:
     metadata:
       labels:
-        k8s-app: j-desktop-2
+        k8s-app: jonathan-snn
     spec:
       containers:
-      - name: j-desktop-2
+      - name: jonathan-snn
         image: nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04
         resources:
           limits:
-            memory: 20Gi
+            memory: 5Gi
             cpu: "10"
             nvidia.com/gpu: 1
-            ephemeral-storage: 500Gi
+            # ephemeral-storage: 500Gi
           requests:
-            memory: 20Gi
-            cpu: "5"
+            memory: 5Gi
+            cpu: "2"
             nvidia.com/gpu: 1
-            ephemeral-storage: 500Gi
-        command: ["sh", "-c", "sleep infinity"]
-        volumeMounts:
-        - mountPath: /pvcvolume
-          name: examplevol
-      volumes:
-      - name: examplevol
-        persistentVolumeClaim:
-          claimName: j-2
+            # ephemeral-storage: 500Gi
+        command: [ "sh", "-c", "sh /pvcvolume/setup.sh && sleep infinity" ]
+      #   volumeMounts:
+      #   - mountPath: /pvcvolume
+      #     name: examplevol
+      # volumes:
+      # - name: examplevol
+      #   persistentVolumeClaim:
+      #     claimName: jonathan-snn
       affinity:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
@@ -44,7 +44,7 @@ spec:
               - key: nvidia.com/gpu.product
                 operator: In
                 values:
-                - NVIDIA-L40
+                - NVIDIA-A100-80GB-PCIe
       tolerations:
       - effect: NoSchedule
         key: nautilus.io/gilpin-lab

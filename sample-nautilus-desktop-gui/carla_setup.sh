@@ -16,14 +16,14 @@ $BASE_PATH/miniconda3/bin/conda init bash
 $BASE_PATH/miniconda3/bin/conda init zsh
 
 # Actiavte conda
-source ~/.bashrc
-source ~/.zshrc
+. ~/.bashrc
+. ~/.zshrc
 
 # Create conda environment for CARLA
 $BASE_PATH/miniconda3/bin/conda create -n carla python=3.8 -y
 
 # Activate the carla conda environment
-source $BASE_PATH/miniconda3/bin/activate carla
+. $BASE_PATH/miniconda3/bin/activate carla
 
 # Download and extract CARLA
 wget https://carla-releases.s3.us-east-005.backblazeb2.com/Linux/CARLA_0.9.15.tar.gz -P $BASE_PATH

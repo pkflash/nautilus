@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: test-vol0
+  name: jonathan-snn
 spec:
   storageClassName: rook-ceph-block
   accessModes:
   - ReadWriteOnce
   resources:
     requests:
-      storage: 20Gi
+      storage: 100Gi
