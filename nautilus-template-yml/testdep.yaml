@@ -28,7 +28,7 @@ spec:
             cpu: "2"
             nvidia.com/gpu: 1
             # ephemeral-storage: 500Gi
-        command: [ "sh", "-c", "sh /pvcvolume/setup.sh && sleep infinity" ]
+        command: [ "sh", "-c", "sleep infinity" ]
       #   volumeMounts:
       #   - mountPath: /pvcvolume
       #     name: examplevol
