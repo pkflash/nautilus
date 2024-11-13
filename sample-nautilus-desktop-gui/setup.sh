@@ -1,6 +1,6 @@
-NAME=INITIALS-desktop # Change this to your initials
-POD_NAME=INITIALS-carla # Change this to your initials
-CACHE_NAME=INITIALS-carla-cache # Change this to your initials
+NAME=an-desktop # Change this to your initials
+POD_NAME=an-carla # Change this to your initials
+CACHE_NAME=an-carla-cache # Change this to your initials
 
 if [ "$1" -eq 1 ]; then
     kubectl delete deployment $NAME
